@@ -4,8 +4,8 @@
 #Date 23Agosto2025
 
 #Variables
-DOCKERFILE=/var/jenkins_home/workspace/jenkins-docker/Dockerfile
-REPOSITORY="nexus-server:5000"
+DOCKERFILE=/var/lib/jenkins/workspace/devops/Dockerfile
+REPOSITORY="srv03:5000"
 APP="test"
 #TAG=$((BUILD_TAG-3))
 

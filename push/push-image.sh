@@ -4,7 +4,7 @@
 #Date 23Agosto2025
 
 #Variables
-REPOSITORY="nexus-server:5000"
+REPOSITORY="srv03:5000"
 APP="test"
 
 
