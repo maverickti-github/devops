@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout SCM GitHub') {
             steps {
                 checkout scmGit(
-                    branches: [[name: 'main']],
+                    branches: [[name: '*/main']],
                     userRemoteConfigs: [[
                         url: 'https://github.com/maverickti-github/devops.git'
                     ]]
