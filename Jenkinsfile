@@ -8,14 +8,12 @@ pipeline {
     stages {
         stage('Checkout SCM GitHub') {
             steps {
-                checkout([
-                    $class: 'GitSCM',
-                    branches: [[name: '*/main']], // Especifica la rama (ej. main o master)
+                checkout scmGit(
+                    branches: [[name: 'master']],
                     userRemoteConfigs: [[
-                        //credentialsId: 'tu-credentials-id', // ID de las credenciales en Jenkins
-                        url: 'https://github.com/maverickti-github/devops.git' // URL de tu repositorio Git
+                        url: 'https://github.com/maverickti-github/devops.git'
                     ]]
-                ])
+                )
             }
         }
 
