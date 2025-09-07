@@ -10,7 +10,7 @@ APP="test"
 
 #Docker Login Nexus Docker Registry
 echo "*** Loggin Nexus ***"
-docker login -u $NEXUS_REGISTRY -p $NEXUS_REGISTRY $REPOSITORY
+docker login $NEXUS_REGISTR_PWS_PSW $REPOSITORY
 #docker login -u dockeradmin -p $NEXUS_REGISTRY $REPOSITORY
 
 echo "******************"
