@@ -2,7 +2,10 @@ pipeline {
     agent any
     
     environment {
-           NEXUS_REGISTRY = credentials('nexus-pass')
+           //NEXUS_REGISTRY = credentials('nexus-pass')
+        NEXUS_REGISTR_USR=credentials('nexus-pass')
+        NEXUS_REGISTR_PSW=credentials('nexus-pass')
+
     }
 
     stages {
