@@ -1,14 +1,12 @@
 #!/bin/bash
 #Script para Generar Imagenes Doccker con el comando "docker build"
 #By Jonnathan López Moreno 
-#Date 23Agosto2025
+#Date 14Septiembre2025
 
 #Variables
-DOCKERFILE=/var/lib/jenkins/workspace/devops/Dockerfile
+DOCKERFILE=/var/lib/jenkins/workspace/jenkins-docker-nexus-kubernetes/Dockerfile
 REPOSITORY="srv03:5000"
 APP="test"
-#TAG=$((BUILD_TAG-3))
-
 
 echo "******************"
 echo "* Build Docker   *"
